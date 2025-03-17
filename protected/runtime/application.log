@@ -1,0 +1,147 @@
+2025/03/17 18:26:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "post------------------------------------Next". in C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post-----------...')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiiblog/index.php/post------------------------------------Next
+---
+2025/03/17 18:26:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "post------------------------------------Next". in C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post-----------...')
+#1 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiiblog/index.php/post------------------------------------Next
+---
+2025/03/17 18:31:36 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\yiiblog\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post/admin')
+#9 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiiblog/index.php/post/admin
+HTTP_REFERER=http://localhost/yiiblog/index.php/post
+---
+2025/03/17 18:37:46 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\yiiblog\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post/admin')
+#9 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiiblog/index.php/post/admin
+HTTP_REFERER=http://localhost/yiiblog/index.php/post
+---
+2025/03/17 19:00:55 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (88)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/17 19:00:55 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (88)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/17 19:00:55 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (88)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/17 19:00:55 [error] [exception.CException] CException: Tag and its behaviors do not have a method or closure named "updateFrequency". in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:264
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(229): CComponent->__call('updateFrequency', Array)
+#1 C:\xampp\htdocs\yiiblog\protected\models\Post.php(163): CActiveRecord->__call('updateFrequency', Array)
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1103): Post->afterSave()
+#3 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#4 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(89): CActiveRecord->save()
+#5 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post/create')
+#16 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/yiiblog/index.php/post/create
+HTTP_REFERER=http://localhost/yiiblog/index.php/post/create
+---
+2025/03/17 19:01:08 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (88)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/17 19:01:08 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (88)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/17 19:01:08 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (88)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/17 19:01:08 [error] [exception.CException] CException: Tag and its behaviors do not have a method or closure named "updateFrequency". in C:\xampp\htdocs\yiiblog\framework\base\CComponent.php:264
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(229): CComponent->__call('updateFrequency', Array)
+#1 C:\xampp\htdocs\yiiblog\protected\models\Post.php(163): CActiveRecord->__call('updateFrequency', Array)
+#2 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(1103): Post->afterSave()
+#3 C:\xampp\htdocs\yiiblog\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#4 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(89): CActiveRecord->save()
+#5 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#6 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post/create')
+#16 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/yiiblog/index.php/post/create
+HTTP_REFERER=http://localhost/yiiblog/index.php/post/create
+---
+2025/03/17 19:03:30 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (88)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/17 19:03:30 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (88)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/17 19:03:30 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php (88)
+in C:\xampp\htdocs\yiiblog\index.php (13)
+2025/03/17 19:04:12 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php:71
+Stack trace:
+#0 C:\xampp\htdocs\yiiblog\protected\controllers\PostController.php(49): PostController->loadModel('5')
+#1 [internal function]: PostController->actionView('5')
+#2 C:\xampp\htdocs\yiiblog\framework\web\actions\CAction.php(114): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#3 C:\xampp\htdocs\yiiblog\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yiiblog\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#14 C:\xampp\htdocs\yiiblog\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yiiblog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yiiblog/index.php/post/5
+HTTP_REFERER=http://localhost/yiiblog/index.php/post/create
+---
